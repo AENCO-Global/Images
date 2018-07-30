@@ -3,6 +3,8 @@ echo "--=== Incoming Paramters (This script hould be reusable) ===--"
 echo "[P1] Version Number is :$1 "
 echo "[P2] Target Server is :$2 "
 echo "[P3] Target Folder is :$3 "
+echo "[P4] Target Service is :$4 "
+
 
 echo "-------------------------------------------"
 
