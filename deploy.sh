@@ -24,7 +24,7 @@ echo "-------------------------------------------"
 
 echo "--=== Transfer files to remote Server ===--"
 echo "rsync -avzhe ssh  --rsync-path="""rsync""" ./serve/* jenkins@$2:$3"""
-rsync -avzhe ssh  --rsync-path="rsync" ./serve/* jenkins@$2:$3
+rsync -avzhe ssh  --rsync-path="rsync" ./serve/.htaccess ./serve/* jenkins@$2:$3
 
 # Dont send credentials.
 echo "----====== Verify Deployments-List from Remote ======----"
