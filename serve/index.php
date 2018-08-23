@@ -29,7 +29,7 @@
             echo '<div class="box boxgallery">';
         }
 
-            echo '<img src="images/gallery/'.$image.'" />';
+            echo '<img src="'.$image.'" />';
 
         if($count>=$count_each_column)
         {
