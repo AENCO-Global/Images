@@ -32,6 +32,6 @@ ssh -p 22 $2 "ls -al $3"
 echo "---------------------------------------------------------"
 
 echo "--=== Version Deployed is [$1] The folowing output from version.info ===--"
-ssh -p 22 $2 "cat $3/version.info"
+ssh -p 22 $2 "cat $3version.html"
 echo "http://aencoin.com/api/media/index.php"
-echo "------------The-End-------------------------------------------------------"
+echo "------------The-End-------------------------------------------------------"aen
