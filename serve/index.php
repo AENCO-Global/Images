@@ -28,7 +28,7 @@
         {
             echo '<div class="box boxgallery">';
         }
-        if (substr($image, '.mp4')>0 ) {
+        if (strpos($image, '.mp4') > 0 ) {
             echo '<video src="'.$image.'" />';
         } else {
             echo '<img src="'.$image.'" />';
