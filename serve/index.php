@@ -28,8 +28,7 @@
         {
             echo '<div class="box boxgallery">';
         }
-
-        if (fnmatch('*.mp4', '$image) ) {
+        if (substr($image, '.mp4')>0 ) {
             echo '<video src="'.$image.'" />';
         } else {
             echo '<img src="'.$image.'" />';
