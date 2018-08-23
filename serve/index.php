@@ -29,8 +29,11 @@
             echo '<div class="box boxgallery">';
         }
 
+        if (fnmatch('*.mp4', '$image) ) {
+            echo '<video src="'.$image.'" />';
+        } else {
             echo '<img src="'.$image.'" />';
-
+        }
         if($count>=$count_each_column)
         {
             $count=0;
