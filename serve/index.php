@@ -65,4 +65,13 @@
     width: 100%;
 }
 
+.boxgallery video {
+    clear: both;
+    float: left;
+    height: auto;
+    margin-bottom: 2%;
+    transition: opacity 0.3s ease 0s;
+    width: 100%;
+}
+
 </style>
