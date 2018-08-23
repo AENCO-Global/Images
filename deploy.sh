@@ -18,7 +18,7 @@ ssh -p 22 $2 "mkdir $3"
 echo "-------------------------------------------"
 
 echo "--=== Modify Version Information ===--"
-echo "Version $1" > version.html
+echo "Version $1" > ./serve/version.html
 ls  -l
 echo "-------------------------------------------"
 
@@ -33,4 +33,5 @@ echo "---------------------------------------------------------"
 
 echo "--=== Version Deployed is [$1] The folowing output from version.info ===--"
 ssh -p 22 $2 "cat $3/version.info"
+echo "http://aencoin.com/api/media/index.php"
 echo "------------The-End-------------------------------------------------------"
