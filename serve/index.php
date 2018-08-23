@@ -4,13 +4,13 @@
 //    echo '<img src="'.$image.'" height=100 width=100 /><br />';
 // }
 
-  $dir    = '';
+  $dir    = '.';
   $files  = scandir($dir);
   $images = array();
 
   foreach($files as $file)
     {
-        if( fnmatch('*.jpg',$file) || fnmatch('*.png',$file) || fnmatch('*.mp4',$file) || fnmatch('*.gif',$file) )
+        if( (fnmatch('*.jpg',$file)) or (fnmatch('*.png',$file)) or (fnmatch('*.mp4',$file)) or (fnmatch('*.gif',$file)) )
         {
             $images[] = $file;
         }
